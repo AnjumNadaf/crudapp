@@ -1,0 +1,29 @@
+<mvc:View
+    controllerName="crudapp.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+	xmlns:sf="sap.ui.layout.form"
+>
+	
+		<App id="app">
+			<pages>
+				<Page id="page" title="List of Employee Projects">
+					<content>
+					<Button id="button1" press="onCallData" width="20rem"  text="CallService"></Button>
+					<Button id="" text="call Service"></Button>
+					<List id="idList" visible="false"  items="{myModel>/PROJECT}" mode="SingleSelectMaster" selectionChange="empSelected">
+					<items>
+					<ObjectListItem intro="{myModel>Pid}" title="{myModel>Name}" number="{myModel>Projectname}" ></ObjectListItem>
+					
+					</items>
+					</List>
+					
+					
+					
+					</content>
+				</Page>
+			</pages>
+		</App>
+	
+</mvc:View>
